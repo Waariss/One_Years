@@ -89,22 +89,6 @@ const HeroSection = React.memo(() => {
       </p>
       <div className="flex seq mb-5">{renderSocialLinks()}</div>
       <div className="flex seq">
-      {/* <Button
-        classes="mr-3"
-        type={ButtonTypes.OUTLINE}
-        name="Celebrate With Us"
-        href="/celebration-details" // Update with the URL to the event details
-      ></Button> */}
-        {/* <Button
-          classes="ml-3"
-          type={ButtonTypes.PRIMARY}
-          name="Let's Talk"
-          href={SOCIAL_LINKS.topmate}
-          otherProps={{
-            target: "_blank",
-            rel: "noreferrer",
-          }}
-        ></Button> */}
       </div>
     </div>
   );

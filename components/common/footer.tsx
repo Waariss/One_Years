@@ -1,9 +1,3 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 import React, { useState } from 'react';
 import { ButtonTypes } from "./button";
 import Image from "next/image";
@@ -12,50 +6,70 @@ const Footer = () => {
   const [hearts, setHearts] = useState([]);
 
   const addHeart = () => {
-    // Create a new heart element with random position
     const newHeart = {
       id: Math.random(),
       top: Math.random() * 100 + '%',
-      left: Math.random() * 100 + '%'
+      left: Math.random() * 100 + '%',
+      emoji: '🐷❤️' // Default heart emoji
     };
-
-    // Add the new heart to the state, which will cause a re-render
     setHearts([...hearts, newHeart]);
-
-    // Optionally remove the heart after some time
     setTimeout(() => {
       setHearts(hearts.filter(heart => heart.id !== newHeart.id));
-    }, 15000); // 3 seconds before removal
+    }, 15000); // 15 seconds before removal
   };
 
-const Button = ({ href, classes, type, name, otherProps }: { href: string, classes: string, type: string, name: string, otherProps: any }) => {
+  const addAngryHeart = () => {
+    const newHeart = {
+      id: Math.random(),
+      top: Math.random() * 100 + '%',
+      left: Math.random() * 100 + '%',
+      emoji: '😠' // Angry emoji
+    };
+    setHearts([...hearts, newHeart]);
+    setTimeout(() => {
+      setHearts(hearts.filter(heart => heart.id !== newHeart.id));
+    }, 15000); // 15 seconds before removal
+  };
+
+  const Button = ({ href, classes, type, name, otherProps }: { href: string, classes: string, type: string, name: string, otherProps: any }) => {
     return (
       <a href={href} className={`${classes} button-${type}`} {...otherProps}>
         {name}
       </a>
     );
   };
-  
 
   const renderFooterContent = (): React.ReactNode => (
     <>
       <h1 className="font-medium text-3xl md:text-4xl text-center">
-      Would you like to have some food with me?🍽
+        Would you like to have some food with me?🍽
       </h1>
       <div className="flex mt-8">
-    <Button
-        classes="mr-3"
-        type={ButtonTypes.OUTLINE}
-        name="Say Yes?"
-        otherProps={{
-            onClick: (event: { preventDefault: () => void; }) => {
-                event.preventDefault();
-                addHeart();
-            },
-        }}
-        href={''}
-    />
-    </div>
+        <Button
+          classes="mr-3"
+          type={ButtonTypes.OUTLINE}
+          name="Say Yes?"
+          otherProps={{
+              onClick: (event: { preventDefault: () => void; }) => {
+                  event.preventDefault();
+                  addHeart();
+              },
+          }}
+          href={''}
+        />
+        <Button
+          classes="ml-3"
+          type={ButtonTypes.OUTLINE}
+          name="Say No? 😠"
+          otherProps={{
+              onClick: (event: { preventDefault: () => void; }) => {
+                  event.preventDefault();
+                  addAngryHeart();
+              },
+          }}
+          href={''}
+        />
+      </div>
       <h2 className="text-center text-sm sm:text-base mt-8">
         Thank you again for staying with me in every situation. Love you Fifa (Moo Moo🐷)
       </h2>
@@ -84,7 +98,7 @@ const Button = ({ href, classes, type, name, otherProps }: { href: string, class
               top: heart.top,
               left: heart.left,
               animation: 'float 2s ease-in-out infinite',
-            }}>🐷❤️</span>
+            }}>{heart.emoji}</span>
           ))}
         </div>
       </div>
