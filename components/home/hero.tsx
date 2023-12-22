@@ -61,10 +61,27 @@ const HeroSection = React.memo(() => {
   }, [typedSpanElement, targetSection]);
 
   const renderBackgroundImage = (): React.ReactNode => (
-    <div className={HERO_STYLES.BG_WRAPPER} style={{ maxHeight: "650px" }}>
-      <HeroImage />
+    <div className={HERO_STYLES.BG_WRAPPER}>
+      <div style={{ flex: 1 }}>
+        {/* Optional content on the left */}
+      </div>
+      <div style={{ flex: 1, position: 'relative' }}>
+        <img
+          src="/about/OUR.png" // Update the path to your girlfriend's image
+          alt="Girlfriend" // A descriptive alt text for the image
+          style={{
+            maxWidth: '100%',
+            height: 'auto',
+            position: 'absolute',
+            right: '140px', // Move the image a little to the left
+            bottom: '10px', // Move the image a little up
+            borderRadius: '45%', // Make the image round
+          }}
+        />
+      </div>
     </div>
   );
+  
 
   const renderSocialLinks = (): React.ReactNode =>
   Object.keys(EMOJI_LINKS).map((el: keyof typeof EMOJI_LINKS) => (

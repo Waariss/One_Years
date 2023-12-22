@@ -23,7 +23,7 @@ const Footer = () => {
       id: Math.random(),
       top: Math.random() * 100 + '%',
       left: Math.random() * 100 + '%',
-      emoji: '😠' // Angry emoji
+      emoji: '🐷👿' // Angry emoji
     };
     setHearts([...hearts, newHeart]);
     setTimeout(() => {
@@ -60,7 +60,7 @@ const Footer = () => {
         <Button
           classes="ml-3"
           type={ButtonTypes.OUTLINE}
-          name="Say No? 😠"
+          name="Say No?"
           otherProps={{
               onClick: (event: { preventDefault: () => void; }) => {
                   event.preventDefault();
