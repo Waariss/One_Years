@@ -206,25 +206,25 @@ export enum ItemSize {
 export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2023",
+    title: "1 Year",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Speaker at React India",
+    title: "1 Year",
     size: ItemSize.SMALL,
     subtitle:
       "Discussed on Interaction to Next Paint (INP), a Google Core Web Vital metric",
     image: "/timeline/reactindia.svg",
-    slideImage: "/timeline/reactindia.jpg",
+    slideImage: "/about/OUR.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2022",
+    title: "11 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
@@ -242,7 +242,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2021",
+    title: "10 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
@@ -260,7 +260,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2020",
+    title: "9 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
@@ -294,7 +294,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2019",
+    title: "8 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
@@ -335,7 +335,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
 
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2018",
+    title: "7 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
@@ -368,7 +368,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
 
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2017",
+    title: "6 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.RIGHT,
@@ -418,7 +418,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2016",
+    title: "5 months",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.RIGHT,
@@ -444,8 +444,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "UI/UX, Frontend Engineer",
-    size: ItemSize.SMALL,
+    title: "4 months",
+    size: ItemSize.LARGE,
     subtitle:
       "Started journey in SDC-SI, where I learnt the fundamentals of Frontend, UI/UX, Graphic design and more...",
     image: "/timeline/si.svg",
@@ -455,18 +455,43 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "2014",
+    title: "3 months",
     size: ItemSize.LARGE,
-    shouldDrawLine: false,
+    subtitle:
+      "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
+    image: "/timeline/xda.svg",
+    slideImage: "/timeline/xda-rt.jpg",
+    shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Recognized Themer",
-    size: ItemSize.SMALL,
+    title: "2 months",
+    size: ItemSize.LARGE,
     subtitle:
       "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
     image: "/timeline/xda.svg",
+    slideImage: "/timeline/xda-rt.jpg",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "1 months",
+    size: ItemSize.LARGE,
+    subtitle:
+      "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
+    image: "/timeline/xda.svg",
+    slideImage: "/timeline/xda-rt.jpg",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Starter",
+    size: ItemSize.LARGE,
+    subtitle:
+      "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
     slideImage: "/timeline/xda-rt.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,

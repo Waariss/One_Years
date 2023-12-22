@@ -501,9 +501,9 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
   const renderSectionTitle = (): React.ReactNode => (
     <div className="flex flex-col">
       <p className="section-title-sm seq">MILESTONES</p>
-      <h1 className="section-heading seq mt-2">Timeline</h1>
+      <h1 className="section-heading seq mt-2">Our Photos</h1>
       <h2 className="text-2xl md:max-w-2xl w-full seq mt-2">
-        A quick recap of proud moments
+      We have captured our journey in photos over 12 months, celebrating each moment and memory. Here to our one year anniversary and many more to come!
       </h2>
     </div>
   );
