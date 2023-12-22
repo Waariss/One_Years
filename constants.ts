@@ -487,12 +487,36 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     alignment: Branch.LEFT,
   },
   {
+    type: NodeTypes.DIVERGE,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "1st trip",
+    size: ItemSize.LARGE,
+    subtitle: "Secured 1st prize in Web design challenge against 50+ teams",
+    slideImage: "/MINE/1st_trip.png",
+    shouldDrawLine: true,
+    alignment: Branch.RIGHT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "1st Bag",
+    size: ItemSize.LARGE,
+    subtitle: "Secured 1st prize in Web design challenge against 50+ teams",
+    slideImage: "/MINE/1st_bag(1).png",
+    shouldDrawLine: true,
+    alignment: Branch.RIGHT,
+  },
+  {
+    type: NodeTypes.CONVERGE,
+  },
+  {
     type: NodeTypes.CHECKPOINT,
     title: "Starter",
     size: ItemSize.LARGE,
     subtitle:
       "Awarded as recognized themer,  Developed themes and ROMs for Xperia 2011 devices lineup with over 15k+ downloads. Featured on xda portal twice.",
-    slideImage: "/timeline/xda-rt.jpg",
+    slideImage: "/MINE/Starter.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
