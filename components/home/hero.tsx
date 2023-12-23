@@ -1,16 +1,7 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
-import { EMAIL, MENULINKS, EMOJI_LINKS, TYPED_STRINGS } from "../../constants";
+import { MENULINKS, EMOJI_LINKS, TYPED_STRINGS } from "../../constants";
 import React, { MutableRefObject, useEffect, useRef } from "react";
 import Typed from "typed.js";
-import Image from "next/image";
 import { gsap, Linear } from "gsap";
-import Button, { ButtonTypes } from "../common/button";
-import HeroImage from "./hero-image";
 
 const HERO_STYLES = {
   SECTION:

@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image"; 
-import { gsap, Linear } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Confetti from 'react-confetti';
 
 const COUNTDOWN_STYLES = {
