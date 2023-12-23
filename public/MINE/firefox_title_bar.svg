@@ -1,0 +1,24 @@
+
+<svg width="644" height="32" viewBox="0 0 644 32" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#373737" />
+    
+    <!-- Forward and Backward buttons -->
+    <polygon points="5,16 15,6 15,26" fill="white" />
+    <polygon points="20,16 30,6 30,26" fill="white" />
+
+    <!-- Reload button -->
+    <circle cx="45" cy="16" r="5" fill="white" />
+    
+    <!-- Home button -->
+    <rect x="55" y="11" width="10" height="10" fill="white" />
+    
+    <!-- URL Bar -->
+    <rect x="80" y="8" width="484" height="16" fill="white" />
+    <text x="85" y="19" fill="black" font-family="Arial" font-size="10">www.one-years-M-Fifa.com</text>
+
+    <!-- Window controls: close, minimize, maximize -->
+    <circle cx="600" cy="16" r="5" fill="#ff6059" />
+    <circle cx="620" cy="16" r="5" fill="#ffbd44" />
+    <circle cx="640" cy="16" r="5" fill="#00ca56" />
+</svg>
